@@ -12,6 +12,7 @@ Practically, I knew I wanted to use Bootstrap, bright colors, animations, and ha
 
 ## Ideas to Improve
 - Continue adding more sandboxes
+- Improve accessibility
 
 ## Reach Out
 - <a href="https://chloe.dev/" target="_blank">`Website - chloe.dev`</a>
