@@ -175,14 +175,20 @@ header.masthead .bg-circle-4 {
 }
 
 .about-buttons {
-    border-radius: 5rem;
+  border-radius: 5rem;
+  background-color: white;
 }
 
 .about-buttons:focus,
 .about-buttons:hover {
-    background-color: #00C9FF !important;
+    background-image: linear-gradient(to right, #92FE9D 0%, #00C9FF 51%, #92FE9D 100%) !important;
     color: white;
-    border-color: #00C9FF !important;
+    border-color: #00C9FF !important;  
+}
+
+.about-buttons:active {
+  box-shadow: 1px 1px 1px 1px #D3D3D3;
+  transform: translateY(.5px);
 }
 
 .btn-xl {
@@ -193,7 +199,7 @@ header.masthead .bg-circle-4 {
     letter-spacing: 0.1rem;
 }
 
-/* "component" box stylings */
+/* generic sandbox stylings */
 
 .component {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
@@ -229,6 +235,91 @@ header.masthead .bg-circle-4 {
 
 .btn-secondary:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 201, 255);
+}
+
+/* sandbox stylings */
+
+#show {
+    display:none;
+}
+
+#showinner {
+    display:none;
+}
+
+.loader1 {
+  border: 10px solid #f3f3f3;
+  border-top: 16px solid #92FE9D;
+  border-right: 16px solid #92FE9D;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin1 8s linear infinite;
+}
+
+@keyframes spin1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader2 {
+  border: 5px solid #f3f3f3;
+  border-top: 8px solid #00C9FF;
+  border-left: 8px solid #00C9FF;    
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin2 4s linear infinite;
+}
+
+@keyframes spin2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader3 {
+  border: 2.5px solid #f3f3f3;
+  border-top: 4px solid #92FE9D;
+  border-right: 4px solid #92FE9D;    
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin3 2s linear infinite;
+}
+
+@keyframes spin3 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader4 {
+  border: 1.25px solid #f3f3f3;
+  border-top: 2px solid #00C9FF;
+  border-left: 2px solid #00C9FF;    
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin4 1s linear infinite;
+}
+
+@keyframes spin4 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader5 {
+  border: .625px solid #f3f3f3;
+  border-top: 1px solid #92FE9D;
+  border-right: 1px solid #92FE9D;    
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin5 .5s linear infinite;
+}
+
+@keyframes spin5 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* footer stylings */

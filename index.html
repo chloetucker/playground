@@ -17,27 +17,28 @@
     <!--Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <title>Playground: the place for playful code</title>
+    <title>Playground: the place where code is play</title>
 </head>
+
 <body>
 
-<!-- Intro (site title, subtitle, title block background) start -->
-  <section id="intro">
-    <header class="masthead text-center text-white">
-        <div class="masthead-content">
-            <div class="container">
-                <h1 class="masthead-heading mb-0 site-title wave-animation">👋</h1>
-                <h1 class="masthead-heading mb-0 site-title">Hey!</h1>
-                <h1 class="masthead-heading mb-0 site-title">Welcome to Playground</h1>
-                <h2 class="subtitle">a place for playful code</h2>
+    <!-- Intro (site title, subtitle, title block background) start -->
+    <section id="intro">
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container">
+                    <h1 class="masthead-heading mb-0 site-title wave-animation">👋</h1>
+                    <h1 class="masthead-heading mb-0 site-title">Hey!</h1>
+                    <h1 class="masthead-heading mb-0 site-title">Welcome to Playground</h1>
+                    <h2 class="subtitle">a place for playful code</h2>
+                </div>
             </div>
-        </div>
-        <div class="bg-circle-1 bg-circle"></div>
-        <div class="bg-circle-2 bg-circle"></div>
-        <div class="bg-circle-3 bg-circle"></div>
-        <div class="bg-circle-4 bg-circle"></div>
-    </header>
-</section>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+    </section>
     <!-- Intro end -->
 
     <!-- Site description box start -->
@@ -52,9 +53,10 @@
                     <div class="collapse" id="whatIsThis">
                         <div class="card card-body">
                             <p>It's a place for me to play around with things that I learn and don't want to devote an entire project to.</p>
-                            <p>Each section below is a self-contained experiment.</p>
+                            <p>Each section below is a self-contained experiment, a sandbox.</p>
+                            <p>I only include things here that delight me.</p>
                             <p>This is a place for my learning, but it can also be a place for yours.</p>
-                            <p>Each component has a link to resources where you can learn more about this thing.</p>
+                            <p>Each sandbox has a link to resources where you can learn more about this thing.</p>
                             <p>Happy coding! 🎉</p>
                         </div>
                     </div>
@@ -68,16 +70,14 @@
                         <div class="card card-body">
                             <p>Because learning should be fun.</p>
                             <p>With so much to explore and discover in the world, why <em>not</em> have fun during that process?</p>
-                            <p>The goals of Playground:</p>
-                            <ul>
-                            <li>to make coding seem so fun, a young person visiting this site would want to start learning 🤸</li>
-                            <li>to make this site so joyful to interact with that the visitor goes away feel better than before💙</li>
-                            </ul>
+                            <p>The goals of Playground are to make:</p>
+                            <p>Coding fun 🤸</p>
+                            <p>This experience so joyful that you go away feel better than before 💙</p>
                         </div>
                     </div>
                 </div>
-               </div> 
-               <div class="column align-items-center text-center">
+            </div>
+            <div class="column align-items-center text-center">
                 <div class="p-5">
                     <button class="btn-xl about-buttons mt-5y" type="button" data-toggle="collapse" data-target="#canIDoThisToo" aria-expanded="false" aria-controls="collapseExample">Can I do this too?
                     </button>
@@ -86,11 +86,11 @@
                             <p>Heck, yeah!</p>
                             <p>All this project code is available on my Github.</p>
                             <p>Plus, it was one of my first projects to use a front-end framework, so...</p>
-                            <p>If I can do it, so can you 🤪</p>
+                            <p>If I can do it, so can you.</p>
                         </div>
                     </div>
                 </div>
-               </div>  
+            </div>
         </div>
     </section>
 
@@ -108,9 +108,12 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 component">
                     <div class="p-5">
-                        <h2 class="display-5">Sandbox 1</h2>
-                        <p>Sandbox 1</p>
-                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                        <h2 class="display-5">Show-and-Hide</h2>
+                        <p><button onclick="showAndHide()" class="rounded-pill">Click me 🙈</button></p>
+                        <div id="show">Boo! 👻<p><br><button onclick="showAndHideInner()" class="rounded-pill">Oh wait, there's more...</button></p>
+                            <div id="showinner">RAWR! 🐉</div>
+                        </div>
+                        <a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp" class="btn btn-secondary btn-lg rounded-pill mt-5" target="_blank">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
@@ -127,14 +130,16 @@
                 </div>
                 <div class="col-lg-6 component">
                     <div class="p-5">
-                        <h2 class="display-5">Sandbox 2</h2>
-                        <p>Sandbox 2</p>
-                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                        <h2 class="display-5">Loader</h2>
+                        <div class="loader1"><div class="loader2"><div class="loader3"><div class="loader4"><div class="loader5"></div></div></div></div></div>
+                        <a href="https://www.w3schools.com/howto/howto_css_loader.asp" target="_blank" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!--
 
     <section>
         <div class="container">
@@ -155,13 +160,127 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 4</h2>
+                        <p>Sandbox 4</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 5</h2>
+                        <p>Sandbox 5</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-6.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 6</h2>
+                        <p>Sandbox 4</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-7.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 7</h2>
+                        <p>Sandbox 5</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-8.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 8</h2>
+                        <p>Sandbox 4</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid component-image mx-auto d-block" src="img/tree-9.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 component">
+                    <div class="p-5">
+                        <h2 class="display-5">Sandbox 9</h2>
+                        <p>Sandbox 5</p>
+                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Component (list of sandbox experiments) list end -->
 
     <!-- Footer start -->
 
     <footer class="py-5 bg-black footer">
         <div class="container">
-            <p>Back to top</p>
+            <p><a href=#intro>Back to top</a></p>
         </div>
         <!-- /.container -->
     </footer>
