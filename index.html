@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="This is Playground.">
+    <meta name="Code Playground" content="This is Code Playground, a place for playful code.">
     <meta name="robots" content="index, follow" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -17,20 +17,21 @@
     <!--Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <title>Playground: the place where code is play</title>
+    <title>Code Playground, a place for playful code</title>
 </head>
 
 <body>
 
-    <!-- Intro (site title, subtitle, title block background) start -->
+    <!-- Intro section start -->
+
     <section id="intro">
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container">
                     <h1 class="masthead-heading mb-0 site-title wave-animation">👋</h1>
                     <h1 class="masthead-heading mb-0 site-title">Hey!</h1>
-                    <h1 class="masthead-heading mb-0 site-title">Welcome to Playground</h1>
-                    <h2 class="subtitle">a place for playful code</h2>
+                    <h1 class="masthead-heading mb-0 site-title">Welcome to<br> Code Playground</h1>
+                    <h2 class="subtitle">the place for playful code!</h2>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -39,9 +40,9 @@
             <div class="bg-circle-4 bg-circle"></div>
         </header>
     </section>
-    <!-- Intro end -->
+    <!-- Intro section end -->
 
-    <!-- Site description box start -->
+    <!-- Site description section starts -->
 
     <section id="about">
         <div class="jumbotron jumbotron-fluid fadeInUp revealOnScroll">
@@ -52,10 +53,14 @@
                     </button>
                     <div class="collapse" id="whatIsThis">
                         <div class="card card-body">
-                            <p>It's a place for me to play around with things that I learn and don't want to devote an entire project to.</p>
-                            <p>Each section below is a self-contained experiment, a sandbox.</p>
+                            <p>Code Playground is a place for me to play with code.</p>
+                            <p>Learning code is challenging. There are many concepts to learn, and as you probably know already, practice is essential. Common advice for practicing what you're learning is "build projects!"</p>
+                            <p>Yeah, but I want to practice most if not everything I learn -  am I supposed to build a million projects to practice and demonstrate what I'm learning? No. Because another common piece of advice is to have fewer, more high quality projects, at least in your portfolio.</p>
+                            <p>Well, okay. That's confusing.</p>
+                            <p>First, you don't have put all the projects you create in your portfolio.</p>
+                            <p>Second, in addition to creating larger projects, why not have a place that contains several smaller projects? These smaller projects can be accomplished in 30 minutes, an hour, or half a day.</p>
+                            <p>That's where Code Playground comes in. Each section below is a self-contained project - a sandbox.</p>
                             <p>I only include things here that delight me.</p>
-                            <p>This is a place for my learning, but it can also be a place for yours.</p>
                             <p>Each sandbox has a link to resources where you can learn more about this thing.</p>
                             <p>Happy coding! 🎉</p>
                         </div>
@@ -70,9 +75,9 @@
                         <div class="card card-body">
                             <p>Because learning should be fun.</p>
                             <p>With so much to explore and discover in the world, why <em>not</em> have fun during that process?</p>
-                            <p>The goals of Playground are to make:</p>
-                            <p>Coding fun 🤸</p>
-                            <p>This experience so joyful that you go away feel better than before 💙</p>
+                            <p>The goals of Code Playground:</p>
+                            <p>To make coding fun 🤸</p>
+                            <p>To create a joyful experience and inspirational learning environment 💙</p>
                         </div>
                     </div>
                 </div>
@@ -94,9 +99,11 @@
         </div>
     </section>
 
-    <!-- Site description box end -->
+    <!-- Site description section ends -->
 
-    <!-- Component (sandbox experiments) list start -->
+    <!-- Sandbox section starts -->
+
+    <!-- Sandbox 1 start -->
 
     <section>
         <div class="container">
@@ -108,8 +115,8 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 component">
                     <div class="p-5">
-                        <h2 class="display-5">Show-and-Hide</h2>
-                        <p><button onclick="showAndHide()" class="rounded-pill">Click me 🙈</button></p>
+                        <h2 class="display-5">1. Show-and-Hide</h2>
+                        <p><button onclick="showAndHide()" class="rounded-pill">Click me</button></p>
                         <div id="show">Boo! 👻<p><br><button onclick="showAndHideInner()" class="rounded-pill">Oh wait, there's more...</button></p>
                             <div id="showinner">RAWR! 🐉</div>
                         </div>
@@ -119,6 +126,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Sandbox 1 end -->
+    <!-- Sandbox 2 start -->
 
     <section>
         <div class="container">
@@ -130,16 +140,25 @@
                 </div>
                 <div class="col-lg-6 component">
                     <div class="p-5">
-                        <h2 class="display-5">Loader</h2>
-                        <div class="loader1"><div class="loader2"><div class="loader3"><div class="loader4"><div class="loader5"></div></div></div></div></div>
+                        <h2 class="display-5">2. CSS Loader</h2>
+                        <div class="loader1">
+                            <div class="loader2">
+                                <div class="loader3">
+                                    <div class="loader4">
+                                        <div class="loader5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://www.w3schools.com/howto/howto_css_loader.asp" target="_blank" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!--
+
+    <!-- Sandbox 2 end -->
+    <!-- Sandbox 3 start -->
 
     <section>
         <div class="container">
@@ -151,14 +170,22 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 component">
                     <div class="p-5">
-                        <h2 class="display-5">Sandbox 3</h2>
-                        <p>Sandbox 3</p>
-                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                        <h2 class="display-5">3. A Tulip, Blooming</h2>
+                        <p><img id="myImage" src="img/tulipbulb.svg" width="220" height="300"></p>
+                        <p><button onclick="document.getElementById('myImage').src='img/tulipbulb.svg'" class="rounded-pill">March</button>
+
+                            <button onclick="document.getElementById('myImage').src='img/tulipbloom.svg'" class="rounded-pill">May</button>
+                            <button onclick="document.getElementById('myImage').src='img/tulipdying.svg'" class="rounded-pill">Soon after</button></p>
+
+                        <a href="https://www.w3schools.com/js/js_intro.asp" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+     <!-- Sandbox 3 end -->
+    <!-- Sandbox 4 start -->
 
     <section>
         <div class="container">
@@ -170,14 +197,23 @@
                 </div>
                 <div class="col-lg-6 component">
                     <div class="p-5">
-                        <h2 class="display-5">Sandbox 4</h2>
-                        <p>Sandbox 4</p>
-                        <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
+                        <h2 class="display-5">4. A Bit of Math</h2>
+                        <p>Enter first number:</p>
+                        <p><input type="text" id="value1" name="value1" value="1"></p>
+                        <p>Enter second number:</p>
+                        <p><input type="text" id="value2" name="value2" value="2"></p>
+                        <p><button onclick="math()" class="rounded-pill">Add them!</button>
+                        </p>
+                        <p id="math"></p>
+                        <a href="https://stackoverflow.com/questions/14496531/adding-two-numbers-concatenates-them-instead-of-calculating-the-sum" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+     <!-- Sandbox 4 end -->
+     <!-- Sandbox 5 start
 
     <section>
         <div class="container">
@@ -189,14 +225,18 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 component">
                     <div class="p-5">
-                        <h2 class="display-5">Sandbox 5</h2>
-                        <p>Sandbox 5</p>
+                        <h2 class="display-5">5. Hover</h2>
+                        <p>Hover</p>
                         <a href="#" class="btn btn-secondary btn-lg rounded-pill mt-5">Learn How to Do This</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Sandbox 5 end -->
+ 
+    <!--     
 
     <section>
         <div class="container">
@@ -274,7 +314,7 @@
         </div>
     </section>
 
-    <!-- Component (list of sandbox experiments) list end -->
+    <!-- Sandbox section ends -->
 
     <!-- Footer start -->
 
@@ -282,11 +322,8 @@
         <div class="container">
             <p><a href=#intro>Back to top</a></p>
         </div>
-        <!-- /.container -->
     </footer>
 
     <!-- Footer end -->
 
-</body>
-
-</html>
+</body></html>

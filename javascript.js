@@ -1,4 +1,4 @@
-// Show-and-Hide Sandbox
+// (1) Show-and-Hide Sandbox
 
 function showAndHide() {
     var x = document.getElementById("show");
@@ -16,4 +16,13 @@ function showAndHideInner() {
     } else {
         x.style.display = "none";
     }
+}
+
+// (4) Math Sandbox
+
+function math() {
+    var y = document.getElementById("value1").value;
+    var z = document.getElementById("value2").value;
+    var x = +y + +z;
+    document.getElementById("math").innerHTML = x;
 }

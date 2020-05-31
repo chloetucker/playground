@@ -14,7 +14,7 @@ h6 {
     font-weight: 800 !important;
 }
 
-/* site title and subtitle, background stylings, including animations */
+/* Intro section stylings */
 
 .site-title {
     margin: 1rem;
@@ -168,7 +168,7 @@ header.masthead .bg-circle-4 {
     }
 }
 
-/* about section stylings */
+/* Site description section stylings */
 
 #about {
     font-family: 'Lato';
@@ -199,12 +199,10 @@ header.masthead .bg-circle-4 {
     letter-spacing: 0.1rem;
 }
 
-/* generic sandbox stylings */
+/* Generic sandbox stylings */
 
 .component {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
-    margin;
-    10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     padding: 10px;
     font-family: 'Catamaran';   
 }
@@ -226,6 +224,8 @@ header.masthead .bg-circle-4 {
 
 .rounded-pill {
     border-radius: 2.5rem;
+    padding: 1rem;
+    margin: .3rem;
 }
 
 .btn-secondary:hover {
@@ -237,7 +237,7 @@ header.masthead .bg-circle-4 {
     box-shadow: 0 0 0 0.2rem rgba(0, 201, 255);
 }
 
-/* sandbox stylings */
+/* Sandbox 1 */
 
 #show {
     display:none;
@@ -247,10 +247,12 @@ header.masthead .bg-circle-4 {
     display:none;
 }
 
+/* Sandbox */
+
 .loader1 {
   border: 10px solid #f3f3f3;
-  border-top: 16px solid #92FE9D;
-  border-right: 16px solid #92FE9D;
+  border-top: 16px solid black;
+  border-right: 16px solid black;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -264,8 +266,8 @@ header.masthead .bg-circle-4 {
 
 .loader2 {
   border: 5px solid #f3f3f3;
-  border-top: 8px solid #00C9FF;
-  border-left: 8px solid #00C9FF;    
+  border-top: 8px solid black;
+  border-left: 8px solid black;    
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -279,8 +281,8 @@ header.masthead .bg-circle-4 {
 
 .loader3 {
   border: 2.5px solid #f3f3f3;
-  border-top: 4px solid #92FE9D;
-  border-right: 4px solid #92FE9D;    
+  border-top: 4px solid black;
+  border-right: 4px solid black;    
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -294,8 +296,8 @@ header.masthead .bg-circle-4 {
 
 .loader4 {
   border: 1.25px solid #f3f3f3;
-  border-top: 2px solid #00C9FF;
-  border-left: 2px solid #00C9FF;    
+  border-top: 2px solid black;
+  border-left: 2px solid black;    
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -309,8 +311,8 @@ header.masthead .bg-circle-4 {
 
 .loader5 {
   border: .625px solid #f3f3f3;
-  border-top: 1px solid #92FE9D;
-  border-right: 1px solid #92FE9D;    
+  border-top: 1px solid black;
+  border-right: 1px solid black;    
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -322,7 +324,7 @@ header.masthead .bg-circle-4 {
   100% { transform: rotate(360deg); }
 }
 
-/* footer stylings */
+/* Footer stylings */
 
 .bg-black {
     background-color: #92FE9D !important;
